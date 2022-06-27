@@ -1,4 +1,4 @@
-/node_modules/
+node_modules
 Makefile
 package-lock.json
 package.json
@@ -6,4 +6,6 @@ package.json
 .DS_Store
 *.log
 .vscode
+sass
 scss
+pug
