@@ -10,17 +10,17 @@ const buildSass = () => src('app/sass/*.scss')
 	}))
 	.pipe(dest('build/styles/'));
 
-const buildPug = () => src('src/pages/*.pug')
+const buildPug = () => src('app/pages/*.pug')
 	.pipe(pug())
 	.pipe(dest('build/'));
 
 const browserSyncJob = () => {
 	browserSync.init({ server: "build/" });
-	watch('src/sass/*.scss', () => {
+	watch('app/sass/*.scss', () => {
 		buildSass();
 		browserSync.stream();
 	});
-	watch('src/pages/*.pug', () => {
+	watch('app/pages/*.pug', () => {
 		buildPug();
 		browserSync.stream();
 	});
