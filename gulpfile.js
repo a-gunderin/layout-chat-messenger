@@ -23,9 +23,9 @@ const browserSyncJob = () => {
 };
 
 const development =() => {
-	browserSyncJob();
 	buildSass();
 	buildPug();
+	browserSyncJob();
 };
 
 exports.server = browserSyncJob;
