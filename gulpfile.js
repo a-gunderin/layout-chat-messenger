@@ -3,33 +3,29 @@ const sass = require('gulp-sass')(require('sass'));
 const pug = require('gulp-pug');
 const browserSync = require('browser-sync').create();
 
-const buildSass = () => src('app/sass/*.scss')
+const buildSass = () => src('app/scss/*.scss')
 	.pipe(sass({
 		sourceMap: false,
 		OutputStyle: "compressed",
 	}))
-	.pipe(dest('build/styles/'));
+	.pipe(dest('build/css/'))
+	.pipe(browserSync.stream());
 
-const buildPug = () => src('app/pages/*.pug')
+const buildPug = () => src('app/*.pug')
 	.pipe(pug())
-	.pipe(dest('build/'));
+	.pipe(dest('build/'))
+	.pipe(browserSync.stream());
 
 const browserSyncJob = () => {
 	browserSync.init({ server: "build/" });
-	watch('app/sass/*.scss', () => {
-		buildSass();
-		browserSync.stream();
-	});
-	watch('app/pages/*.pug', () => {
-		buildPug();
-		browserSync.stream();
-	});
+	watch('app/scss/*.scss', buildSass);
+	watch('app/*.pug', buildPug);
 };
 
 const development =() => {
+	browserSyncJob();
 	buildSass();
 	buildPug();
-	browserSyncJob();
 };
 
 exports.server = browserSyncJob;
