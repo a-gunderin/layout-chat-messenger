@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 const buildSass = () => src('app/scss/*.scss')
 	.pipe(sass({
 		sourceMap: false,
-		OutputStyle: "compressed",
+		outputStyle: 'compressed',
 	}))
 	.pipe(dest('build/css/'))
 	.pipe(browserSync.stream());
@@ -17,7 +17,7 @@ const buildPug = () => src('app/*.pug')
 	.pipe(browserSync.stream());
 
 const browserSyncJob = () => {
-	browserSync.init({ server: "build/" });
+	browserSync.init({ server: 'build/' });
 	watch('app/scss/*.scss', buildSass);
 	watch('app/*.pug', buildPug);
 };
