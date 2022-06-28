@@ -12,7 +12,8 @@
 		"slint:fix": "npx stylelint ./app/scss/*.scss --fix",
 		"hlint": "npx htmlhint ./build/*.html",
 		"dev": "npx gulp dev",
-		"build": "npx gulp build"
+		"build": "npx gulp build",
+		"deploy": "npx surge ./build/ wasteful-pen.surge.sh"
 	},
 	"bugs": {
 		"url": "https://github.com/a-gunderin/layout-designer-project-lvl3/issues"
