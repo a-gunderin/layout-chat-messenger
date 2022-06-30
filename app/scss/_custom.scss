@@ -1,3 +1,9 @@
-h1 {
-	color: darken(red, 20%);
+body {
+	height: 100vh;
+	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+	@include media-breakpoint-up(xl) {
+		height: calc(100vh - $spacer * 2);
+		border-radius: $border-radius;
+	}
 }

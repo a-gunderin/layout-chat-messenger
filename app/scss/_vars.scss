@@ -2,6 +2,23 @@
 // Don't rename this file on 'variables' because bootstrap folder has file named 'variables'
 // and because of 'includePaths' option in gulp it will failed while compilation
 
+$gray-600: #EFEFEF;
+$body-bg: #EFEFEF;
+
+$primary:       #4545A5;
+$secondary:     #6C757D;
+$success:       #28A745;
+$info:          #17A2B8;
+$warning:       #FFC107;
+$danger:        #DC3545;
+$light:         #FBFBFB;
+$dark:          #343A40;
+
+$border-color: $gray-600;
+$border-radius: 1rem;
+
+$font-family-sans-serif: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -18,3 +35,5 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1540px
 );
+
+$enable-shadows: true;

@@ -1,13 +1,17 @@
-extends pug/_layouts/_main
-include pug/_mixins/_mixins
+extends _layouts/_main
+include _mixins/_mixins
 
 block head
 	+head('Messenger Home: Andrei Gunderin')
 
 block sidebar
-	.col-xl-4
-		h1 Hello World!
-		p.
+	.col-xl-4.border-end
+		nav.bg-primary.d-flex.justify-content-around.py-4
+			a.text-white(href="#1") Logo Main Page
+			a.text-white(href="#2") Контакты
+			a.text-white(href="#3") Сообщения
+			a.text-white(href="#4") Профиль
+		div.pt-5.px-4.
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -16,8 +20,8 @@ block sidebar
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 block main
-	.col-xl-8
-		h2 Hello guys! How r u doing?
+	.col-xl-8.p-3
+		h2 One more time
 		p.
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

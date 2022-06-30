@@ -18,7 +18,7 @@ const buildSass = () => src('app/scss/*.scss')
 	.pipe(dest('build/css/'))
 	.pipe(browserSync.stream());
 
-const buildPug = () => src('app/*.pug')
+const buildPug = () => src(['app/pug/**/*.pug', '!app/pug/**/_*.pug'])
 	.pipe(pug())
 	.pipe(dest('build/'))
 	.pipe(browserSync.stream());
