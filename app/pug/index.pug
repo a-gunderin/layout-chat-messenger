@@ -5,13 +5,9 @@ block head
 	+head('Messenger Home: Andrei Gunderin')
 
 block sidebar
-	.col-xl-4.border-end
-		nav.bg-primary.d-flex.justify-content-around.py-4
-			a.text-white(href="#1") Logo Main Page
-			a.text-white(href="#2") Контакты
-			a.text-white(href="#3") Сообщения
-			a.text-white(href="#4") Профиль
-		div.pt-5.px-4.
+	.col-xl-4.border-end.d-flex.flex-column
+		include _components/_navigation
+		div.pt-5.px-4.flex-grow-1.
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
