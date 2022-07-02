@@ -13,8 +13,20 @@
 .D\(f\) {
   display: flex;
 }
+.D\(n\) {
+  display: none;
+}
+.Fxg\(1\) {
+  flex-grow: 1;
+}
+.Fld\(c\) {
+  flex-direction: column;
+}
 .Ai\(c\) {
   align-items: center;
+}
+.Or\(2\) {
+  order: 2;
 }
 .Ff\(roboto\) {
   font-family: Roboto, Verdana, sans-serif;
@@ -33,28 +45,18 @@
 }
 .Mx\(a\) {
   margin-left: auto;
+}
+.Mx\(a\), .Mend\(a\) {
   margin-right: auto;
 }
-.Mend\(11px\) {
-  margin-right: 11px;
+.Mend\(40px\) {
+  margin-right: 40px;
 }
-.Mend\(26px\) {
-  margin-right: 26px;
-}
-.Mend\(28px\) {
-  margin-right: 28px;
-}
-.Mend\(50px\) {
-  margin-right: 50px;
-}
-.Mend\(8px\) {
-  margin-right: 8px;
+.Mend\(43px\) {
+  margin-right: 43px;
 }
 .Maw\(1540px\) {
   max-width: 1540px;
-}
-.Maw\(464px\) {
-  max-width: 464px;
 }
 .Mih\(100vh\) {
   min-height: 100vh;
@@ -65,12 +67,40 @@
 .P\(1rem\) {
   padding: 1rem;
 }
-.Px\(22px\) {
+.Pend\(43px\) {
+  padding-right: 43px;
+}
+.Pstart\(22px\) {
   padding-left: 22px;
-  padding-right: 22px;
 }
 .Td\(n\) {
   text-decoration: none;
+}
+@media (min-width:992px) {
+  .D\(b\)--lg {
+    display: block;
+  }
+  .Or\(0\)--lg {
+    order: 0;
+  }
+  .Mend\(11px\)--lg {
+    margin-right: 11px;
+  }
+  .Mend\(26px\)--lg {
+    margin-right: 26px;
+  }
+  .Mend\(28px\)--lg {
+    margin-right: 28px;
+  }
+  .Mend\(8px\)--lg {
+    margin-right: 8px;
+  }
+  .Maw\(464px\)--lg {
+    max-width: 464px;
+  }
+  .Pend\(27px\)--lg {
+    padding-right: 27px;
+  }
 }
 @media (min-width:1200px) {
   .Bdrs\(1rem\)--xl {
