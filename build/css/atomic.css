@@ -1,0 +1,93 @@
+.Bgc\(grayColor\) {
+  background-color: #EFEFEF;
+}
+.Bgc\(primaryColor\) {
+  background-color: #4545A5;
+}
+.Bgc\(white\) {
+  background-color: white;
+}
+.C\(white\) {
+  color: white;
+}
+.D\(f\) {
+  display: flex;
+}
+.Ai\(c\) {
+  align-items: center;
+}
+.Ff\(roboto\) {
+  font-family: Roboto, Verdana, sans-serif;
+}
+.Fz\(14px\) {
+  font-size: 14px;
+}
+.H\(72px\) {
+  height: 72px;
+}
+.Lh\(1\.5rem\) {
+  line-height: 1.5rem;
+}
+.Lh\(21px\) {
+  line-height: 21px;
+}
+.Mx\(a\) {
+  margin-left: auto;
+  margin-right: auto;
+}
+.Mend\(11px\) {
+  margin-right: 11px;
+}
+.Mend\(26px\) {
+  margin-right: 26px;
+}
+.Mend\(28px\) {
+  margin-right: 28px;
+}
+.Mend\(50px\) {
+  margin-right: 50px;
+}
+.Mend\(8px\) {
+  margin-right: 8px;
+}
+.Maw\(1540px\) {
+  max-width: 1540px;
+}
+.Maw\(464px\) {
+  max-width: 464px;
+}
+.Mih\(100vh\) {
+  min-height: 100vh;
+}
+.Ov\(h\) {
+  overflow: hidden;
+}
+.P\(1rem\) {
+  padding: 1rem;
+}
+.Px\(22px\) {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.Td\(n\) {
+  text-decoration: none;
+}
+@media (min-width:1200px) {
+  .Bdrs\(1rem\)--xl {
+    border-radius: 1rem;
+  }
+  .Bdrststart\(1rem\)--xl {
+    border-top-left-radius: 1rem;
+  }
+  .My\(1\.5rem\)--xl {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .Mih\(bodyHeightXl\)--xl {
+    min-height: calc(100vh - 3rem);
+  }
+  .Px\(1\.5rem\)--xl {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

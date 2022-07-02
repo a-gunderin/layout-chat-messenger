@@ -1,12 +1,15 @@
-nav.d-flex.justify-content-between.align-items-center.order-lg-1.order-xl-0.py-4.px-4.bg-primary
-	a.d-flex.align-items-center.text-white.text-decoration-none(href="#1")
-		img(src="images/icons/logo.svg" width="15" height="25")
-	a.d-flex.align-items-center.text-white.text-decoration-none.fs-7(href="#2")
-		img.me-1(src="images/icons/people.svg" width="25" height="19")
+- var linksClass = 'D(f) Ai(c) C(white) Td(n) Fz(14px) Lh(21px)';
+- var navClass = "D(f) Ai(c) H(72px) Px(22px) Bgc(primaryColor) Bdrststart(1rem)--xl Ov(h)";
+
+nav(class=navClass)
+	a(href="#1" class=linksClass + ' Mend(50px)')
+		img(src="images/icons/logo.svg" alt="icon" width="15" height="25")
+	a(href="#2" class=linksClass + ' Mend(26px)')
+		img(src="images/icons/people.svg" alt="icon" width="25" height="19" class="Mend(8px)")
 		span Контакты
-	a.d-flex.align-items-center.text-white.text-decoration-none.fs-7(href="#3")
-		img.me-1(src="images/icons/chat.svg" width="25" height="23")
+	a(href="#3" class=linksClass + ' Mend(28px)')
+		img(src="images/icons/chat.svg" alt="icon" width="25" height="23" class="Mend(8px)")
 		span Сообщения
-	a.d-flex.align-items-center.text-white.text-decoration-none.fs-7(href="#4")
-		img.me-1(src="images/icons/person.svg" width="19" height="19")
+	a(href="#4" class=linksClass)
+		img(src="images/icons/person.svg" alt="icon" width="19" height="19" class="Mend(11px)")
 		span Профиль
