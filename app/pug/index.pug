@@ -5,18 +5,35 @@ block head
 	+head('Messenger Home: Andrei Gunderin')
 
 block sidebar
-	div(class="D(f) Fld(c) Maw(464px)--lg")
+	div(class='Flxs(0) D(f) Fld(c) W(100%) Maw(464px)--lg Bdend(defBorder)--lg')
 		include _components/_navigation
-		div(class="Fxg(1) P(1rem) Lh(1.5rem)").
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		div(class='Fxg(1) D(f) Pt(3rem) Ov(h)')
+			div#contacts-tab(class='D(f) Fld(c) W(100%) Pb(1rem)')
+				div(class='Fz(2rem) Fw(700) Lh(38px) C(darkColor) Mb(1.5rem) Px(1.5rem)')
+					|Контакты
+				form#contacts-form(class='Mb(46px) Px(1.5rem)')
+					input#contacts-input(
+						type='text'
+						placeholder='Поиск по контактам'
+						class='Bd(0) H(4.5rem) Bdb(defBorder) Px(1.5rem) W(100%) Bxz(bb) C(secondaryColor)::ph O(n):fv Bdbc(secondaryColor):fv Trsdu(.3s)'
+						)
+				ul(class='hide-scrollbar My(0) List(n) Px(1.5rem)')
+					li
+						div(class='Mb(1rem) Lh(1.5rem) C(secondaryColor)') A
+						a(href='#a1' class='contact-link D(f) Ai(c) Py(21px) Px(16px) Bxsh(shadowSm) Td(n) Mb(14px) Bgc(white) Bgc(primaryColor):h Trsdu(.3s)')
+							img(
+								src='images/avatar_3.jpg'
+								alt='Алексей Примадонин'
+								width='50'
+								height='50'
+								class='W(50px) H(50px) Bdrs(50%) Objf(cv) Mend(1.5rem)'
+							)
+							div
+								span(class='D(b) C(darkColor) Lh(1.5rem) Fw(700) contact-link:h_C(lightColor) Trsdu(.3s)') Алексей Примадонин
+								span(class='D(b) C(secondaryColor) Fz(14px) Lh(21px) contact-link:h_C(grayColor) Trsdu(.3s)') Онлайн
 
 block main
-	div(class="D(n) D(b)--lg P(1rem)")
+	div(class='D(n) D(b)--lg P(1rem)')
 		h2 One more time
 		p.
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

@@ -1,14 +1,53 @@
+.Bd\(0\) {
+  border: 0;
+}
+.Bdb\(defBorder\) {
+  border-bottom: 1px solid #efefef;
+}
+.Bdbc\(secondaryColor\)\:fv:focus-visible {
+  border-bottom-color: #6c757d;
+}
+.Bdrs\(50\%\) {
+  border-radius: 50%;
+}
 .Bgc\(grayColor\) {
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 .Bgc\(primaryColor\) {
-  background-color: #4545A5;
+  background-color: #4545a5;
 }
 .Bgc\(white\) {
   background-color: white;
 }
+.Bgc\(primaryColor\)\:h:hover {
+  background-color: #4545a5;
+}
+.Bxz\(bb\) {
+  box-sizing: border-box;
+}
+.Bxsh\(shadowSm\) {
+  box-shadow: 0 2px 4px rgba(0,0,0,.075);
+}
+.C\(darkColor\) {
+  color: #343a40;
+}
+.C\(secondaryColor\) {
+  color: #6c757d;
+}
+.C\(secondaryColor\)\:\:ph::placeholder {
+  color: #6c757d;
+}
 .C\(white\) {
   color: white;
+}
+.contact-link:hover .contact-link\:h_C\(grayColor\) {
+  color: #efefef;
+}
+.contact-link:hover .contact-link\:h_C\(lightColor\) {
+  color: #fbfbfb;
+}
+.D\(b\) {
+  display: block;
 }
 .D\(f\) {
   display: flex;
@@ -18,6 +57,9 @@
 }
 .Fxg\(1\) {
   flex-grow: 1;
+}
+.Flxs\(0\) {
+  flex-shrink: 0;
 }
 .Fld\(c\) {
   flex-direction: column;
@@ -31,11 +73,29 @@
 .Ff\(roboto\) {
   font-family: Roboto, Verdana, sans-serif;
 }
+.Fw\(700\) {
+  font-weight: 700;
+}
 .Fz\(14px\) {
   font-size: 14px;
 }
+.Fz\(2rem\) {
+  font-size: 2rem;
+}
+.H\(100vh\) {
+  height: 100vh;
+}
+.H\(4\.5rem\) {
+  height: 4.5rem;
+}
+.H\(50px\) {
+  height: 50px;
+}
 .H\(72px\) {
   height: 72px;
+}
+.List\(n\) {
+  list-style-type: none;
 }
 .Lh\(1\.5rem\) {
   line-height: 1.5rem;
@@ -43,11 +103,21 @@
 .Lh\(21px\) {
   line-height: 21px;
 }
+.Lh\(38px\) {
+  line-height: 38px;
+}
 .Mx\(a\) {
   margin-left: auto;
 }
 .Mx\(a\), .Mend\(a\) {
   margin-right: auto;
+}
+.My\(0\) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.Mend\(1\.5rem\) {
+  margin-right: 1.5rem;
 }
 .Mend\(40px\) {
   margin-right: 40px;
@@ -55,11 +125,29 @@
 .Mend\(43px\) {
   margin-right: 43px;
 }
+.Mb\(1\.5rem\) {
+  margin-bottom: 1.5rem;
+}
+.Mb\(14px\) {
+  margin-bottom: 14px;
+}
+.Mb\(1rem\) {
+  margin-bottom: 1rem;
+}
+.Mb\(46px\) {
+  margin-bottom: 46px;
+}
 .Maw\(1540px\) {
   max-width: 1540px;
 }
-.Mih\(100vh\) {
-  min-height: 100vh;
+.Mih\(500px\) {
+  min-height: 500px;
+}
+.Objf\(cv\) {
+  object-fit: cover;
+}
+.O\(n\)\:fv:focus-visible {
+  outline: none;
 }
 .Ov\(h\) {
   overflow: hidden;
@@ -67,8 +155,26 @@
 .P\(1rem\) {
   padding: 1rem;
 }
+.Px\(1\.5rem\) {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.Px\(16px\) {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.Py\(21px\) {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+.Pt\(3rem\) {
+  padding-top: 3rem;
+}
 .Pend\(43px\) {
   padding-right: 43px;
+}
+.Pb\(1rem\) {
+  padding-bottom: 1rem;
 }
 .Pstart\(22px\) {
   padding-left: 22px;
@@ -76,7 +182,19 @@
 .Td\(n\) {
   text-decoration: none;
 }
+.Trsdu\(\.3s\) {
+  transition-duration: .3s;
+}
+.W\(100\%\) {
+  width: 100%;
+}
+.W\(50px\) {
+  width: 50px;
+}
 @media (min-width:992px) {
+  .Bdend\(defBorder\)--lg {
+    border-right: 1px solid #efefef;
+  }
   .D\(b\)--lg {
     display: block;
   }
@@ -109,12 +227,12 @@
   .Bdrststart\(1rem\)--xl {
     border-top-left-radius: 1rem;
   }
+  .H\(bodyHeightXl\)--xl {
+    height: calc(100vh - 3rem);
+  }
   .My\(1\.5rem\)--xl {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-  }
-  .Mih\(bodyHeightXl\)--xl {
-    min-height: calc(100vh - 3rem);
   }
   .Px\(1\.5rem\)--xl {
     padding-left: 1.5rem;

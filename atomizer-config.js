@@ -14,17 +14,19 @@ module.exports = {
 		// BACKGROUND IMAGES & GRADIENTS
 
 		// COLORS
-		grayColor: '#EFEFEF',
-		primaryColor: '#4545A5',
-		secondaryColor: '#6C757D',
-		successColor: '#28A745',
-		infoColor: '#17A2B8',
-		warningColor: '#FFC107',
-		dangerColor: '#DC3545',
-		lightColor: '#FBFBFB',
-		darkColor: '#343A40',
+		grayColor: '#efefef',
+		primaryColor: '#4545a5',
+		secondaryColor: '#6c757d',
+		successColor: '#28a745',
+		infoColor: '#17a2b8',
+		warningColor: '#ffc107',
+		dangerColor: '#dc3545',
+		lightColor: '#fbfbfb',
+		darkColor: '#343a40',
 
 		// OTHER VALUES
-		bodyHeightXl: 'calc(100vh - 3rem)'
+		bodyHeightXl: 'calc(100vh - 3rem)',
+		defBorder: '1px solid #efefef',
+		shadowSm: '0 2px 4px rgba(0,0,0,.075)'
 	},
 };
