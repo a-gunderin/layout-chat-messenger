@@ -149,6 +149,9 @@
 .O\(n\)\:fv:focus-visible {
   outline: none;
 }
+.Ov\(a\) {
+  overflow: auto;
+}
 .Ov\(h\) {
   overflow: hidden;
 }
