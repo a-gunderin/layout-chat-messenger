@@ -137,9 +137,6 @@
 .Mb\(18px\) {
   margin-bottom: 18px;
 }
-.Mb\(1rem\) {
-  margin-bottom: 1rem;
-}
 .Mb\(46px\) {
   margin-bottom: 46px;
 }
@@ -155,10 +152,16 @@
 .O\(n\)\:fv:focus-visible {
   outline: none;
 }
+.T\(24px\) {
+  top: 24px;
+}
+.End\(40px\) {
+  right: 40px;
+}
 .Ov\(a\) {
   overflow: auto;
 }
-.Ov\(h\) {
+.Ov\(h\), .Ell {
   overflow: hidden;
 }
 .P\(1rem\) {
@@ -179,6 +182,9 @@
 .Pt\(3rem\) {
   padding-top: 3rem;
 }
+.Pend\(40px\) {
+  padding-right: 40px;
+}
 .Pend\(43px\) {
   padding-right: 43px;
 }
@@ -187,6 +193,12 @@
 }
 .Pstart\(22px\) {
   padding-left: 22px;
+}
+.Pos\(a\) {
+  position: absolute;
+}
+.Pos\(r\) {
+  position: relative;
 }
 .Td\(n\) {
   text-decoration: none;
@@ -199,6 +211,26 @@
 }
 .W\(50px\) {
   width: 50px;
+}
+.Ell:after {
+  content: ".";
+  font-size: 0;
+  visibility: hidden;
+  display: inline-block;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+}
+.Ell {
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  hyphens: none;
+}
+@media (max-width:413px) {
+  .T\(5px\)--xxs {
+    top: 5px;
+  }
 }
 @media (min-width:992px) {
   .Bdend\(defBorder\)--lg {

@@ -1,6 +1,7 @@
 module.exports = {
 	'breakPoints': {
-		'xs': '@media (max-width:576px)',
+		'xxs': '@media (max-width:413px)',
+		'xs': '@media (min-width:413px)',
 		'sm': '@media (min-width:576px)',
 		'md': '@media (min-width:768px)',
 		'lg': '@media (min-width:992px)',

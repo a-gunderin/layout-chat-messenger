@@ -1,31 +1,14 @@
 include ../_data/_contacts
+include ../_mixins/_mixins
 
-div#contacts-tab(class='D(f) Fld(c) W(100%) Pb(1rem)')
-	div(class='Fz(2rem) Fw(700) Lh(38px) C(darkColor) Mb(1.5rem) Px(1.5rem)')
-		|Контакты
-	form#contacts-form(class='Mb(46px) Px(1.5rem)')
-		input#contacts-input(
-			type='text'
-			placeholder='Поиск по контактам'
-			class='Bd(0) H(4.5rem) Bdb(defBorder) Px(1.5rem) W(100%) Bxz(bb) C(secondaryColor)::ph O(n):fv Bdbc(secondaryColor):fv Trsdu(.3s)'
-			)
+div#contacts(class='D(f) Fld(c) W(100%) Pb(1rem)')
+	+asideHeader('Контакты', 'contacts-form', 'contacts-input', 'Поиск по контактам')
 
 	ul(class='hide-scrollbar My(0) List(n) Px(1.5rem) Ov(a)')
-		- const contactLinkClasses = 'contact-link D(f) Ai(c) Py(21px) Px(16px) Bxsh(shadowSm) Td(n) Mb(14px) Bgc(white) Bgc(primaryColor):h Trsdu(.3s)';
 
 		each persons, letter in contacts
 			li
 				div(class='Mb(1rem) Lh(1.5rem) C(secondaryColor)') #{letter}
 
 				each contact in persons
-					a(href='#contact-link' class=contactLinkClasses)
-						img(
-							src=contact.avatar
-							alt=contact.name
-							width='50'
-							height='50'
-							class='W(50px) H(50px) Bdrs(50%) Objf(cv) Mend(1.5rem)'
-						)
-						div
-							span(class='D(b) C(darkColor) Lh(1.5rem) Fw(700) contact-link:h_C(lightColor) Trsdu(.3s)') #{contact.name}
-							span(class='D(b) C(secondaryColor) Fz(14px) Lh(21px) contact-link:h_C(grayColor) Trsdu(.3s)') #{contact.status}
+					+asideLink('#test', contact.avatar, contact.name, contact.status)
