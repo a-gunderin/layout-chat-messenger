@@ -1,13 +1,11 @@
 include ../_mixins/_mixins
 
-div#chats(class='D(f) Fld(c) W(100%) Pb(1rem)')
+div(id='chats' class='D(f) Fld(c) H(100%) Pb(1rem) D(n)')
 	+asideHeader('Чаты', 'chats-form', 'chats-input', 'Поиск по сообщениям')
 
 	ul(class='hide-scrollbar My(0) List(n) Px(1.5rem) Ov(a)')
-		li
-			+asideLink('#test', './images/avatar_4.jpg', 'Вениамин Редакторович', 'o_O', '11:45')
+		li: +asideLink('#test', './images/avatar_4.jpg', 'Вениамин Редакторович', 'o_O', '11:45')
 		li
 			- const msg = 'Привет, скоро третий проект? Уже скоро надо будет выложить';
 			+asideLink('#test', './images/avatar_2.jpg', 'Джедай Падаванов', msg, '10:12')
-		li
-			+asideLink('#test', './images/avatar_3.jpg', 'Алексей Примадонин', 'Тесты упали >_<', '08:53')
+		li: +asideLink('#test', './images/avatar_3.jpg', 'Алексей Примадонин', 'Тесты упали >_<', '08:53')

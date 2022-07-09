@@ -8,10 +8,10 @@ block head
 block sidebar
 	div(class='Flxs(0) D(f) Fld(c) W(100%) Maw(464px)--lg Bdend(defBorder)--lg')
 		include _components/_navigation
-		div(class='Fxg(1) D(f) Pt(3rem) Ov(h)')
-			//- include _components/_contacts
+		div(id='tabs' class='Fxg(1) D(f) Fld(c) Jc(fs) Pt(3rem) Ov(h)')
+			include _components/_contacts
 			include _components/_chats
 
 block main
-	div(class='Flxg(1) D(n) Jc(c) Ai(c) D(f)--lg P(1rem)')
+	div(class='As(st) Flxg(1) D(n) Jc(c) Ai(c) D(f)--lg P(1rem)')
 		include _components/_greetings

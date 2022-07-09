@@ -29,7 +29,7 @@ const atomicCss = () => src('build/**/*.html')
 const browserSyncJob = () => {
 	browserSync.init({ server: 'build/' });
 	watch('app/scss/**/*.scss', buildSass);
-	watch('app/**/*.pug', series(buildPug, atomicCss));
+	watch(['app/**/*.pug', 'app/js/**/*.js'], series(buildPug, atomicCss));
 };
 
 const development =() => {
