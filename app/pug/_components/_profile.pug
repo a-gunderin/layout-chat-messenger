@@ -1,0 +1,22 @@
+include ../_mixins/_mixins
+
+div(id='profile' class='D(f) Fld(c) H(100%) Pb(1rem) Ov(h) D(n)')
+	+asideHeader('Профиль', 'profile-form', 'profile-input', 'Поиск по сообщениям')
+
+	div(class='D(f) Fld(c) Ai(c) Mx(1.5rem) Mb(3rem) Px(1rem) Py(40px)')
+		img(
+		alt='avatar'
+			src='images/avatar_1.jpg'
+			width='90'
+			height='90'
+			class='Bdrs(50%) Mb(8px)'
+		)
+		h3(class='Mt(0) Mb(1.5rem) Fw(700) Lh(1.5rem)') Кодовёнок Хекслетович
+		p(class='My(0) Lh(1.5rem) Ta(c) C(black50)').
+			Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+
+	ul(class='hide-scrollbar W(100%) Maw(384px) Mx(a) List(n) Pstart(0) My(0) Ov(a)')
+		+profileItem('Страна', 'Москва, Россия', 'globe.svg', 16, 16)
+		+profileItem('Телефон', '+7 (499) 123-45-67', 'phone.svg', 16, 16)
+		+profileItem('Email', 'nikita.m@hexlet.io', 'mail.svg', 16, 12)
+		+profileItem('Twitter', '@n_mikhaylov', 'people-b.svg', 16, 12)

@@ -28,6 +28,9 @@
 .Bxsh\(shadowSm\) {
   box-shadow: 0 2px 4px rgba(0,0,0,.075);
 }
+.C\(black50\) {
+  color: rgba(0, 0, 0, 0.5);
+}
 .C\(darkColor\) {
   color: #343a40;
 }
@@ -64,7 +67,7 @@
 .As\(st\) {
   align-self: stretch;
 }
-.Fld\(c\) {
+.Fld\(c\), .Fxd\(c\) {
   flex-direction: column;
 }
 .Ai\(c\) {
@@ -78,6 +81,9 @@
 }
 .Jc\(fs\) {
   justify-content: flex-start;
+}
+.Jc\(sb\) {
+  justify-content: space-between;
 }
 .Ff\(roboto\) {
   font-family: Roboto, Verdana, sans-serif;
@@ -118,18 +124,23 @@
 .Lh\(38px\) {
   line-height: 38px;
 }
+.Mx\(1\.5rem\) {
+  margin-left: 1.5rem;
+}
+.Mx\(1\.5rem\), .Mend\(1\.5rem\) {
+  margin-right: 1.5rem;
+}
 .Mx\(a\) {
   margin-left: auto;
 }
 .Mx\(a\), .Mend\(a\) {
   margin-right: auto;
 }
-.My\(0\) {
+.My\(0\), .Mt\(0\) {
   margin-top: 0;
-  margin-bottom: 0;
 }
-.Mend\(1\.5rem\) {
-  margin-right: 1.5rem;
+.My\(0\) {
+  margin-bottom: 0;
 }
 .Mend\(40px\) {
   margin-right: 40px;
@@ -149,11 +160,20 @@
 .Mb\(1rem\) {
   margin-bottom: 1rem;
 }
+.Mb\(3rem\) {
+  margin-bottom: 3rem;
+}
 .Mb\(46px\) {
   margin-bottom: 46px;
 }
+.Mb\(8px\) {
+  margin-bottom: 8px;
+}
 .Maw\(1540px\) {
   max-width: 1540px;
+}
+.Maw\(384px\) {
+  max-width: 384px;
 }
 .Mih\(500px\) {
   min-height: 500px;
@@ -187,12 +207,29 @@
   padding-left: 16px;
   padding-right: 16px;
 }
+.Px\(1rem\), .Pstart\(1rem\) {
+  padding-left: 1rem;
+}
+.Px\(1rem\) {
+  padding-right: 1rem;
+}
 .Py\(21px\) {
   padding-top: 21px;
   padding-bottom: 21px;
 }
+.Py\(40px\) {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.Py\(8px\) {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 .Pt\(3rem\) {
   padding-top: 3rem;
+}
+.Pend\(22px\) {
+  padding-right: 22px;
 }
 .Pend\(40px\) {
   padding-right: 40px;
@@ -203,6 +240,9 @@
 .Pb\(1rem\) {
   padding-bottom: 1rem;
 }
+.Pstart\(0\) {
+  padding-left: 0;
+}
 .Pstart\(22px\) {
   padding-left: 22px;
 }
@@ -211,6 +251,9 @@
 }
 .Pos\(r\) {
   position: relative;
+}
+.Ta\(c\) {
+  text-align: center;
 }
 .Td\(n\) {
   text-decoration: none;

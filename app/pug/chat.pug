@@ -5,11 +5,13 @@ block head
 	+head('Messenger Chat: Andrei Gunderin')
 
 block sidebar
-	h1 CHAT Lorem ipsum dolor sit amet
-	p.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	div(class='Flxs(0) D(f) Fld(c) W(100%) Maw(464px)--lg Bdend(defBorder)--lg')
+		include _components/_navigation
+		div(id='tabs' class='Fxg(1) D(f) Fld(c) Jc(fs) Pt(3rem) Ov(h)')
+			include _components/_contacts
+			include _components/_chats
+			include _components/_profile
+
+block main
+	div(class='As(st) Flxg(1) D(n) Jc(c) Ai(c) D(f)--lg P(1rem)')
+		include _components/_greetings

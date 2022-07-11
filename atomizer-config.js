@@ -24,6 +24,7 @@ module.exports = {
 		dangerColor: '#dc3545',
 		lightColor: '#fbfbfb',
 		darkColor: '#343a40',
+		black50: 'rgba(0, 0, 0, 0.5)',
 
 		// OTHER VALUES
 		bodyHeightXl: 'calc(100vh - 3rem)',
