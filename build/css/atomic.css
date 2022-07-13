@@ -361,6 +361,15 @@
 .Trsdu\(\.3s\) {
   transition-duration: .3s;
 }
+.Trsp\(trsBdbc\) {
+  transition-property: border-bottom-color;
+}
+.Trsp\(trsBgc\) {
+  transition-property: background-color;
+}
+.Trsp\(trsC\) {
+  transition-property: color;
+}
 .W\(100\%\) {
   width: 100%;
 }

@@ -35,5 +35,10 @@ module.exports = {
 		myMsgBorder: '1px solid rgba(239, 239, 239, 0.6)',
 		defOutline: '1px dashed #6c757d',
 		shadowSm: '0px 2px 2px rgba(0, 0, 0, 0.08)',
+
+		// TRANSITION PROPERTIES
+		trsBdbc: 'border-bottom-color',
+		trsBgc: 'background-color',
+		trsC: 'color',
 	},
 };

@@ -16,11 +16,11 @@ mixin asideHeader(title, formId, inputId, placeholder)
 			id=inputId
 			type='text'
 			placeholder=placeholder
-			class='Bd(0) H(4.5rem) Bdb(defBorder) Px(1.5rem) W(100%) Bxz(bb) C(secondaryColor)::ph O(n):fv Bdbc(secondaryColor):fv Trsdu(.3s)'
+			class='Bd(0) H(4.5rem) Bdb(defBorder) Px(1.5rem) W(100%) Bxz(bb) C(secondaryColor)::ph O(n):fv Bdbc(secondaryColor):fv Trsp(trsBdbc) Trsdu(.3s)'
 			)
 
 mixin asideLink(href, avatarPath, name, subName, time)
-	- const asideLinkClasses = 'contact-link Pos(r) D(f) Ai(c) Py(21px) Px(16px) Pend(40px) Bxsh(shadowSm) Td(n) Mb(14px) Bgc(white) Bgc(primaryColor):h Trsdu(.3s) Ov(h)';
+	- const asideLinkClasses = 'contact-link Pos(r) D(f) Ai(c) Py(21px) Px(16px) Pend(40px) Bxsh(shadowSm) Td(n) Mb(14px) Bgc(white) Bgc(primaryColor):h Trsp(trsBgc) Trsdu(.3s) Ov(h)';
 	a(href=href class=asideLinkClasses)
 		img(
 			src=avatarPath
@@ -30,10 +30,10 @@ mixin asideLink(href, avatarPath, name, subName, time)
 			class='W(50px) H(50px) Bdrs(50%) Objf(cv) Mend(1.5rem)'
 		)
 		div(class='Ov(h)')
-			span(class='D(b) C(darkColor) Lh(1.5rem) Fw(700) contact-link:h_C(lightColor) Trsdu(.3s)') #{name}
-			span(class='D(b) C(secondaryColor) Fz(14px) Lh(21px) contact-link:h_C(grayColor) Trsdu(.3s) Ell') #{subName}
+			span(class='D(b) C(darkColor) Lh(1.5rem) Fw(700) contact-link:h_C(lightColor) Trsp(trsC) Trsdu(.3s)') #{name}
+			span(class='D(b) C(secondaryColor) Fz(14px) Lh(21px) contact-link:h_C(grayColor) Trsp(trsC) Trsdu(.3s) Ell') #{subName}
 		if time
-			span(class='Pos(a) T(24px) T(5px)--xxs End(40px) C(secondaryColor) contact-link:h_C(grayColor) Fz(14px) Lh(21px) Trsdu(.3s)') #{time}
+			span(class='Pos(a) T(24px) T(5px)--xxs End(40px) C(secondaryColor) contact-link:h_C(grayColor) Fz(14px) Lh(21px) Trsp(trsC) Trsdu(.3s)') #{time}
 
 mixin profileItem(fieldKey, fieldValue, iconPath, iconW, iconH)
 	li(class='D(f) Jc(sb) Ai(c) Py(8px) Pstart(1rem) Pend(22px) Bdb(defBorder)')
