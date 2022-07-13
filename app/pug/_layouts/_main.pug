@@ -1,10 +1,12 @@
 doctype html
-html(class='Bgc(grayColor) Px(1.5rem)--xl' lang='ru')
+html(lang='ru')
 	head
 		block head
-	body(class='Pos(r) D(f) Maw(1540px) Mx(a) My(1.5rem)--xl H(100vh) H(bodyHeightXl)--xl Mih(500px) Bgc(white) Bdrs(1rem)--xl Ov(h) Ff(roboto)')
-		block sidebar
-		block main
+	body(class='Bgc(grayColor) Px(1.5rem)--xl Ff(roboto)')
+		div(class='Pos(r) D(f) Maw(1540px) Mx(a) My(1.5rem)--xl H(100vh) H(bodyHeightXl)--xl Mih(500px) Bgc(white) Bdrs(1rem)--xl Ov(h)')
+			block sidebar
+			block main
+
 		block scripts
 			script
 				include ../../js/nav.js
