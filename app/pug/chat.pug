@@ -33,7 +33,7 @@ block main
 				span(class='Fz(14px) Lh(21px) C(secondaryColor)') Онлайн
 
 		ul(
-			class='hide-scrollbar H(chatListMobileHeight) H(a)--lg Fxg(1) D(f) Flw(w) Ac(fs) Maw(831px) Mx(a) List(n) My(0) Pt(3rem) Pb(4rem) Px(3rem) Ov(a) Bxz(bb) Bxz(bb) Bxz(bb)--lg'
+			class='hide-scrollbar H(chatListMobileHeight) H(a)--lg Fxg(1) D(f) Flw(w) Ac(fs) Maw(831px) Mx(a) List(n) My(0) Pt(3rem) Pb(4rem) Px(3rem) Ov(a) Bxz(bb)'
 		)
 			- const msg1 = 'Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?';
 			+partnerMessage('images/avatar_4.jpg', 'Вениамин Редакторович', msg1, '8 минут назад')
@@ -50,14 +50,14 @@ block main
 
 		form(class='Pos(st) B(0) D(f) W(100%) Maw(831px) Mx(a) Bdt(defBorder) Ai(c) Bgc(#fff)')
 			textarea(
-				class='Fxg(1) Bd(0) Py(2rem) Px(1.5rem) Rsz(n) Lh(1.5rem) C(secondaryColor)::ph O(defOutline):fv Oo(-3px)'
+				class='Fxg(1) Bd(0) Py(22px) Py(2rem)--lg Pstart(2rem) Pend(1rem) Px(1.5rem)--lg Rsz(n) Lh(1.5rem) C(secondaryColor)::ph O(defOutline):fv Oo(-3px)'
 				rows="1"
 				type='text'
 				placeholder='Напишите сообщение...'
 			)
 			button(
 				type='submit'
-				class='D(f) Ai(c) Jc(c) W(50px) H(50px) Mx(1.5rem) Bd(0) Bgc(primaryColor) Bdrs(50%) Cur(p)'
+				class='D(f) Ai(c) Jc(c) W(50px) H(50px) Mx(1rem) Mx(1.5rem)--lg Bd(0) Bgc(primaryColor) Bdrs(50%) Cur(p)'
 			)
 				img(
 					alt='icon'

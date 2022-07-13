@@ -149,7 +149,7 @@
   height: 50px;
 }
 .H\(chatListMobileHeight\) {
-  height: calc(100vh - 16rem);
+  height: calc(100vh - 14rem);
 }
 .List\(n\) {
   list-style-type: none;
@@ -169,6 +169,12 @@
 .Mx\(1\.5rem\), .Mend\(1\.5rem\) {
   margin-right: 1.5rem;
 }
+.Mx\(1rem\) {
+  margin-left: 1rem;
+}
+.Mx\(1rem\), .Mend\(1rem\) {
+  margin-right: 1rem;
+}
 .Mx\(a\) {
   margin-left: auto;
 }
@@ -180,9 +186,6 @@
 }
 .My\(0\) {
   margin-bottom: 0;
-}
-.Mend\(1rem\) {
-  margin-right: 1rem;
 }
 .Mend\(40px\) {
   margin-right: 40px;
@@ -285,12 +288,18 @@
 .Px\(1rem\), .Pstart\(1rem\) {
   padding-left: 1rem;
 }
-.Px\(1rem\) {
+.Px\(1rem\), .Pend\(1rem\) {
   padding-right: 1rem;
 }
 .Px\(3rem\) {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+.Py\(1rem\) {
+  padding-top: 1rem;
+}
+.Py\(1rem\), .Pb\(1rem\) {
+  padding-bottom: 1rem;
 }
 .Py\(21px\) {
   padding-top: 21px;
@@ -299,14 +308,6 @@
 .Py\(22px\) {
   padding-top: 22px;
   padding-bottom: 22px;
-}
-.Py\(2rem\) {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.Py\(40px\) {
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 .Py\(8px\) {
   padding-top: 8px;
@@ -327,9 +328,6 @@
 .Pend\(43px\) {
   padding-right: 43px;
 }
-.Pb\(1rem\) {
-  padding-bottom: 1rem;
-}
 .Pb\(4rem\) {
   padding-bottom: 4rem;
 }
@@ -338,6 +336,9 @@
 }
 .Pstart\(22px\) {
   padding-left: 22px;
+}
+.Pstart\(2rem\) {
+  padding-left: 2rem;
 }
 .Pos\(a\) {
   position: absolute;
@@ -393,9 +394,6 @@
   .Bdend\(defBorder\)--lg {
     border-right: 1px solid #efefef;
   }
-  .Bxz\(bb\)--lg {
-    box-sizing: border-box;
-  }
   .D\(b\)--lg {
     display: block;
   }
@@ -411,6 +409,10 @@
   .H\(a\)--lg {
     height: auto;
   }
+  .Mx\(1\.5rem\)--lg {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
   .Mend\(11px\)--lg {
     margin-right: 11px;
   }
@@ -425,6 +427,18 @@
   }
   .Maw\(464px\)--lg {
     max-width: 464px;
+  }
+  .Px\(1\.5rem\)--lg {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .Py\(2\.5rem\)--lg {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .Py\(2rem\)--lg {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .Pend\(27px\)--lg {
     padding-right: 27px;
