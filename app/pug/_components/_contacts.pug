@@ -1,7 +1,11 @@
 include ../_data/_contacts
 include ../_mixins/_mixins
 
-div(id='contacts' class='D(f) Fld(c) H(100%) Pb(1rem) Ov(h)')
+div(
+	id='contacts'
+	data-tab-block='contacts'
+	class='D(f) Fld(c) H(100%) Pb(1rem) Ov(h)'
+)
 	+asideHeader('Контакты', 'contacts-form', 'contacts-input', 'Поиск по контактам')
 
 	ul(class='hide-scrollbar My(0) List(n) Px(1.5rem) Ov(a)')

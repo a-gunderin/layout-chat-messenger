@@ -25,10 +25,15 @@ module.exports = {
 		lightColor: '#fbfbfb',
 		darkColor: '#343a40',
 		black50: 'rgba(0, 0, 0, 0.5)',
+		msgTimeColor1: 'rgba(108, 117, 125, 0.6)',
+		msgTimeColor2: 'rgba(255, 255, 255, 0.6)',
 
 		// OTHER VALUES
 		bodyHeightXl: 'calc(100vh - 3rem)',
+		chatListMobileHeight: 'calc(100vh - 16rem)',
 		defBorder: '1px solid #efefef',
-		shadowSm: '0 2px 4px rgba(0,0,0,.075)'
+		myMsgBorder: '1px solid rgba(239, 239, 239, 0.6)',
+		defOutline: '1px dashed #6c757d',
+		shadowSm: '0px 2px 2px rgba(0, 0, 0, 0.08)',
 	},
 };

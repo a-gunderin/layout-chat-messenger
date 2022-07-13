@@ -1,6 +1,10 @@
 include ../_mixins/_mixins
 
-div(id='chats' class='D(f) Fld(c) H(100%) Pb(1rem) Ov(h) D(n)')
+div(
+	id='chats'
+	data-tab-block='chats'
+	class='D(f) Fld(c) H(100%) Pb(1rem) Ov(h) D(n)'
+)
 	+asideHeader('Чаты', 'chats-form', 'chats-input', 'Поиск по сообщениям')
 
 	ul(class='hide-scrollbar My(0) List(n) Px(1.5rem) Ov(a)')

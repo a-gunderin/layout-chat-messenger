@@ -1,6 +1,10 @@
 include ../_mixins/_mixins
 
-div(id='profile' class='D(f) Fld(c) H(100%) Pb(1rem) Ov(h) D(n)')
+div(
+	id='profile'
+	data-tab-block='profile'
+	class='D(f) Fld(c) H(100%) Pb(1rem) Ov(h) D(n)'
+)
 	+asideHeader('Профиль', 'profile-form', 'profile-input', 'Поиск по сообщениям')
 
 	div(class='D(f) Fld(c) Ai(c) Mx(1.5rem) Mb(3rem) Px(1rem) Py(40px)')

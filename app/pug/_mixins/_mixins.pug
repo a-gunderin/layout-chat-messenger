@@ -46,3 +46,30 @@ mixin profileItem(fieldKey, fieldValue, iconPath, iconW, iconH)
 			width=iconW
 			height=iconH
 		)
+
+mixin partnerMessage(avatarPath, personName, message, time)
+	li(class='D(f) W(100%) Mb(1rem)')
+		img(
+			alt='avatar'
+			src=avatarPath
+			width='50'
+			height='50'
+			class='Bdrs(50%) As(fe) Mend(1rem)'
+		)
+		div(class='Maw(558px) Bxz(bb) D(f) Fld(c) Bdrs(16px) Bxsh(shadowSm) P(1.5rem) Bgc(lightColor)')
+			p(class='Mt(0) Mb(4px) Fw(700) Lh(1.5rem) C(darkColor)') #{personName}
+			p(class='Mt(0) Mb(8px) Lh(1.5rem) C(secondaryColor)') #{message}
+			p(class='My(0) Fz(14px) Lh(21px) Pt(5px) Bdt(defBorder) C(msgTimeColor1)') #{time}
+
+mixin myMessage(avatarPath, message, time)
+	li(class='D(f) W(100%) Mb(1rem) Jc(fe)')
+		img(
+			alt='avatar'
+			src=avatarPath
+			width='50'
+			height='50'
+			class='Bdrs(50%) As(fe) Mend(1rem)'
+		)
+		div(class='Maw(558px) Bxz(bb) D(f) Fld(c) Bdrs(16px) Bxsh(shadowSm) P(1.5rem) Bgc(primaryColor)')
+			p(class='Mt(0) Mb(8px) Lh(1.5rem) C(lightColor)') #{message}
+			p(class='My(0) Fz(14px) Lh(21px) Pt(5px) Bdt(myMsgBorder) C(msgTimeColor2)') #{time}

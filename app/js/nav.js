@@ -1,6 +1,6 @@
 const navEl = document.getElementById('navigation');
 const navLinkEls = navEl.querySelectorAll('[data-tab-link]');
-const tabEls = document.querySelectorAll('#tabs > div');
+const tabEls = document.querySelectorAll('[data-tab-block]');
 const tabIds = Array.from(tabEls).map((i) => i.id);
 
 navLinkEls.forEach((navLink) => {

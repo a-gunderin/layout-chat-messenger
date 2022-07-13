@@ -1,17 +1,32 @@
 .Bd\(0\) {
   border: 0;
 }
+.Bdt\(defBorder\) {
+  border-top: 1px solid #efefef;
+}
+.Bdt\(myMsgBorder\) {
+  border-top: 1px solid rgba(239, 239, 239, 0.6);
+}
 .Bdb\(defBorder\) {
   border-bottom: 1px solid #efefef;
 }
 .Bdbc\(secondaryColor\)\:fv:focus-visible {
   border-bottom-color: #6c757d;
 }
+.Bdrs\(16px\) {
+  border-radius: 16px;
+}
 .Bdrs\(50\%\) {
   border-radius: 50%;
 }
+.Bgc\(\#fff\) {
+  background-color: #fff;
+}
 .Bgc\(grayColor\) {
   background-color: #efefef;
+}
+.Bgc\(lightColor\) {
+  background-color: #fbfbfb;
 }
 .Bgc\(primaryColor\) {
   background-color: #4545a5;
@@ -26,13 +41,22 @@
   box-sizing: border-box;
 }
 .Bxsh\(shadowSm\) {
-  box-shadow: 0 2px 4px rgba(0,0,0,.075);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);
 }
 .C\(black50\) {
   color: rgba(0, 0, 0, 0.5);
 }
 .C\(darkColor\) {
   color: #343a40;
+}
+.C\(lightColor\) {
+  color: #fbfbfb;
+}
+.C\(msgTimeColor1\) {
+  color: rgba(108, 117, 125, 0.6);
+}
+.C\(msgTimeColor2\) {
+  color: rgba(255, 255, 255, 0.6);
 }
 .C\(secondaryColor\) {
   color: #6c757d;
@@ -49,6 +73,9 @@
 .contact-link:hover .contact-link\:h_C\(lightColor\) {
   color: #fbfbfb;
 }
+.Cur\(p\) {
+  cursor: pointer;
+}
 .D\(b\) {
   display: block;
 }
@@ -64,6 +91,9 @@
 .Flxs\(0\) {
   flex-shrink: 0;
 }
+.As\(fe\) {
+  align-self: flex-end;
+}
 .As\(st\) {
   align-self: stretch;
 }
@@ -73,17 +103,26 @@
 .Ai\(c\) {
   align-items: center;
 }
+.Ac\(fs\) {
+  align-content: flex-start;
+}
 .Or\(2\) {
   order: 2;
 }
 .Jc\(c\) {
   justify-content: center;
 }
+.Jc\(fe\) {
+  justify-content: flex-end;
+}
 .Jc\(fs\) {
   justify-content: flex-start;
 }
 .Jc\(sb\) {
   justify-content: space-between;
+}
+.Flw\(w\) {
+  flex-wrap: wrap;
 }
 .Ff\(roboto\) {
   font-family: Roboto, Verdana, sans-serif;
@@ -109,8 +148,8 @@
 .H\(50px\) {
   height: 50px;
 }
-.H\(72px\) {
-  height: 72px;
+.H\(chatListMobileHeight\) {
+  height: calc(100vh - 16rem);
 }
 .List\(n\) {
   list-style-type: none;
@@ -142,6 +181,9 @@
 .My\(0\) {
   margin-bottom: 0;
 }
+.Mend\(1rem\) {
+  margin-right: 1rem;
+}
 .Mend\(40px\) {
   margin-right: 40px;
 }
@@ -166,6 +208,9 @@
 .Mb\(46px\) {
   margin-bottom: 46px;
 }
+.Mb\(4px\) {
+  margin-bottom: 4px;
+}
 .Mb\(8px\) {
   margin-bottom: 8px;
 }
@@ -175,26 +220,56 @@
 .Maw\(384px\) {
   max-width: 384px;
 }
+.Maw\(558px\) {
+  max-width: 558px;
+}
+.Maw\(831px\) {
+  max-width: 831px;
+}
 .Mih\(500px\) {
   min-height: 500px;
 }
 .Objf\(cv\) {
   object-fit: cover;
 }
+.O\(defOutline\)\:fv:focus-visible {
+  outline: 1px dashed #6c757d;
+}
 .O\(n\)\:fv:focus-visible {
   outline: none;
+}
+.Oo\(-3px\) {
+  outline-offset: -3px;
+}
+.T\(0\) {
+  top: 0;
 }
 .T\(24px\) {
   top: 24px;
 }
+.End\(0\) {
+  right: 0;
+}
 .End\(40px\) {
   right: 40px;
+}
+.B\(0\) {
+  bottom: 0;
+}
+.B\(4\.5rem\) {
+  bottom: 4.5rem;
+}
+.Start\(0\) {
+  left: 0;
 }
 .Ov\(a\) {
   overflow: auto;
 }
 .Ov\(h\), .Ell {
   overflow: hidden;
+}
+.P\(1\.5rem\) {
+  padding: 1.5rem;
 }
 .P\(1rem\) {
   padding: 1rem;
@@ -213,9 +288,21 @@
 .Px\(1rem\) {
   padding-right: 1rem;
 }
+.Px\(3rem\) {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 .Py\(21px\) {
   padding-top: 21px;
   padding-bottom: 21px;
+}
+.Py\(22px\) {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.Py\(2rem\) {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .Py\(40px\) {
   padding-top: 40px;
@@ -227,6 +314,9 @@
 }
 .Pt\(3rem\) {
   padding-top: 3rem;
+}
+.Pt\(5px\) {
+  padding-top: 5px;
 }
 .Pend\(22px\) {
   padding-right: 22px;
@@ -240,6 +330,9 @@
 .Pb\(1rem\) {
   padding-bottom: 1rem;
 }
+.Pb\(4rem\) {
+  padding-bottom: 4rem;
+}
 .Pstart\(0\) {
   padding-left: 0;
 }
@@ -251,6 +344,12 @@
 }
 .Pos\(r\) {
   position: relative;
+}
+.Pos\(st\) {
+  position: sticky;
+}
+.Rsz\(n\) {
+  resize: none;
 }
 .Ta\(c\) {
   text-align: center;
@@ -266,6 +365,9 @@
 }
 .W\(50px\) {
   width: 50px;
+}
+.Z\(1\) {
+  z-index: 1;
 }
 .Ell:after {
   content: ".";
@@ -291,14 +393,23 @@
   .Bdend\(defBorder\)--lg {
     border-right: 1px solid #efefef;
   }
+  .Bxz\(bb\)--lg {
+    box-sizing: border-box;
+  }
   .D\(b\)--lg {
     display: block;
   }
   .D\(f\)--lg {
     display: flex;
   }
+  .D\(n\)--lg {
+    display: none;
+  }
   .Or\(0\)--lg {
     order: 0;
+  }
+  .H\(a\)--lg {
+    height: auto;
   }
   .Mend\(11px\)--lg {
     margin-right: 11px;
@@ -317,6 +428,9 @@
   }
   .Pend\(27px\)--lg {
     padding-right: 27px;
+  }
+  .Pos\(s\)--lg {
+    position: static;
   }
 }
 @media (min-width:1200px) {
