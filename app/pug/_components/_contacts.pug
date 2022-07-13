@@ -1,10 +1,13 @@
 include ../_data/_contacts
 include ../_mixins/_mixins
 
+- const defContactsBlockClasses = 'D(f) Fld(c) H(100%) Pb(1rem) Ov(h)';
+- const disabledContactsBlockClasses = 'D(f) Fld(c) H(100%) Pb(1rem) Ov(h) D(n)';
+
 div(
 	id='contacts'
 	data-tab-block='contacts'
-	class='D(f) Fld(c) H(100%) Pb(1rem) Ov(h)'
+	class=chatPageActive ? disabledContactsBlockClasses : defContactsBlockClasses
 )
 	+asideHeader('Контакты', 'contacts-form', 'contacts-input', 'Поиск по контактам')
 

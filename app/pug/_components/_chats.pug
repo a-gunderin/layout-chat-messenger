@@ -1,9 +1,13 @@
 include ../_mixins/_mixins
 
+- const defChatBlockClasses = 'D(f) Fld(c) H(100%) Pb(1rem) Ov(h) D(n)';
+- const activeChatBlockClasses = 'D(f) Fld(c) H(100%) Pb(1rem) Ov(h)';
+
+
 div(
 	id='chats'
 	data-tab-block='chats'
-	class='D(f) Fld(c) H(100%) Pb(1rem) Ov(h) D(n)'
+	class=chatPageActive ? activeChatBlockClasses : defChatBlockClasses
 )
 	+asideHeader('Чаты', 'chats-form', 'chats-input', 'Поиск по сообщениям')
 
