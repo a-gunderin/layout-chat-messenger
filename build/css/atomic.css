@@ -466,12 +466,7 @@
   .H\(bodyHeightXl\)--xl {
     height: calc(100vh - 3rem);
   }
-  .My\(1\.5rem\)--xl {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .Px\(1\.5rem\)--xl {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .P\(1\.5rem\)--xl {
+    padding: 1.5rem;
   }
 }
