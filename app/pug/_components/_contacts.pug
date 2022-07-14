@@ -14,7 +14,7 @@ div(
 	ul(class='hide-scrollbar My(0) List(n) Px(1.5rem) Ov(a)')
 
 		each persons, letter in contacts
-			li
+			li(class='Mb(3rem)')
 				div(class='Mb(1rem) Lh(1.5rem) C(secondaryColor)') #{letter}
 				each contact in persons
 					+asideLink('#test', contact.avatar, contact.name, contact.status)
