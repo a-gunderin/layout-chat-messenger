@@ -316,6 +316,9 @@
 .Pt\(3rem\) {
   padding-top: 3rem;
 }
+.Pt\(43px\) {
+  padding-top: 43px;
+}
 .Pt\(5px\) {
   padding-top: 5px;
 }
@@ -451,6 +454,9 @@
   .Py\(2rem\)--lg {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+  .Pt\(3rem\)--lg {
+    padding-top: 3rem;
   }
   .Pend\(27px\)--lg {
     padding-right: 27px;
