@@ -1,20 +1,20 @@
 - const linksClass = 'D(f) Ai(c) C(white) Td(n) Fz(14px) Lh(21px)';
-- const navClass = 'Or(2) Or(0)--lg Flxs(0) D(f) Jc(sb) Ai(c) H(4.5rem) Pstart(22px) Pend(43px) Pend(27px)--lg Bgc(primaryColor) Bdrststart(1rem)--xl Ov(h)';
+- const navClass = 'Or(2) Or(0)--lg Flxs(0) D(f) Ai(c) Jc(sb) Jc(fs)--lg H(4.5rem) Pstart(22px) Pend(43px) Pend(27px)--lg Bgc(primaryColor) Bdrststart(1rem)--xl Ov(h)';
 - const sectionTitleClass = 'D(n) D(b)--lg';
 
 nav(id='navigation' class=navClass)
-	a(href='#logo' class=linksClass)
+	a(href='#logo' class=linksClass + ' Mend(40px)--lg')
 		img(src='images/icons/logo.svg' alt='icon' width='15' height='25')
 
 	if currentChat
 		a(href='#current-chat' data-tab-link='current-chat' class=linksClass  + ' D(n)--lg')
 			img(src='images/icons/chat-left-text.svg' alt='icon' width='25' height='24')
 
-	a(href='#contacts' data-tab-link='contacts' class=linksClass)
+	a(href='#contacts' data-tab-link='contacts' class=linksClass + ' Mend(30px)--lg')
 		img(src='images/icons/people.svg' alt='icon' width='25' height='19' class='Mend(8px)--lg')
 		span(class=sectionTitleClass) Контакты
 
-	a(href='#chats' data-tab-link='chats' class=linksClass)
+	a(href='#chats' data-tab-link='chats' class=linksClass + ' Mend(30px)--lg')
 		img(src='images/icons/chat.svg' alt='icon' width='25' height='24' class='Mend(8px)--lg')
 		span(class=sectionTitleClass) Сообщения
 

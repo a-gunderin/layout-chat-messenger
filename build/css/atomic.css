@@ -410,6 +410,9 @@
   .Or\(0\)--lg {
     order: 0;
   }
+  .Jc\(fs\)--lg {
+    justify-content: flex-start;
+  }
   .Fz\(2rem\)--lg {
     font-size: 2rem;
   }
@@ -422,6 +425,12 @@
   }
   .Mend\(11px\)--lg {
     margin-right: 11px;
+  }
+  .Mend\(30px\)--lg {
+    margin-right: 30px;
+  }
+  .Mend\(40px\)--lg {
+    margin-right: 40px;
   }
   .Mend\(8px\)--lg {
     margin-right: 8px;
