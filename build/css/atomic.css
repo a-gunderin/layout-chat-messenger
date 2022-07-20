@@ -292,12 +292,6 @@
   padding-left: 3rem;
   padding-right: 3rem;
 }
-.Py\(1rem\) {
-  padding-top: 1rem;
-}
-.Py\(1rem\), .Pb\(1rem\) {
-  padding-bottom: 1rem;
-}
 .Py\(21px\) {
   padding-top: 21px;
 }
@@ -309,6 +303,10 @@
 }
 .Py\(22px\) {
   padding-bottom: 22px;
+}
+.Py\(2rem\) {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .Py\(8px\) {
   padding-top: 8px;
@@ -331,6 +329,9 @@
 }
 .Pend\(43px\) {
   padding-right: 43px;
+}
+.Pb\(1rem\) {
+  padding-bottom: 1rem;
 }
 .Pb\(4rem\) {
   padding-bottom: 4rem;
@@ -421,6 +422,9 @@
   }
   .Or\(0\)--lg {
     order: 0;
+  }
+  .Fz\(1rem\)--lg {
+    font-size: 1rem;
   }
   .Fz\(2rem\)--lg {
     font-size: 2rem;
