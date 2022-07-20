@@ -145,6 +145,9 @@
 .H\(4\.5rem\) {
   height: 4.5rem;
 }
+.H\(42px\) {
+  height: 42px;
+}
 .H\(50px\) {
   height: 50px;
 }
@@ -297,10 +300,14 @@
 }
 .Py\(21px\) {
   padding-top: 21px;
+}
+.Py\(21px\), .Pb\(21px\) {
   padding-bottom: 21px;
 }
-.Py\(22px\) {
+.Py\(22px\), .Pt\(22px\) {
   padding-top: 22px;
+}
+.Py\(22px\) {
   padding-bottom: 22px;
 }
 .Py\(8px\) {
@@ -370,6 +377,9 @@
 .W\(100\%\) {
   width: 100%;
 }
+.W\(42px\) {
+  width: 42px;
+}
 .W\(50px\) {
   width: 50px;
 }
@@ -415,6 +425,9 @@
   .Fz\(2rem\)--lg {
     font-size: 2rem;
   }
+  .H\(50px\)--lg {
+    height: 50px;
+  }
   .H\(a\)--lg {
     height: auto;
   }
@@ -457,6 +470,9 @@
   }
   .Pos\(s\)--lg {
     position: static;
+  }
+  .W\(50px\)--lg {
+    width: 50px;
   }
 }
 @media (min-width:1200px) {
