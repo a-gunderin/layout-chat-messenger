@@ -12,8 +12,8 @@ div(
 	+asideHeader('Чаты', 'chats-form', 'chats-input', 'Поиск по сообщениям')
 
 	ul(class='hide-scrollbar My(0) List(n) Px(1.5rem) Ov(a)')
-		li: +asideLink('#test', './images/avatar_4.jpg', 'Вениамин Редакторович', 'o_O', '11:45')
-		li
+		li(class='Mb(1rem)'): +asideLink('#test', './images/avatar_4.jpg', 'Вениамин Редакторович', 'o_O', '11:45')
+		li(class='Mb(1rem)')
 			- const msg = 'Привет, скоро третий проект? Уже скоро надо будет выложить';
 			+asideLink('#test', './images/avatar_2.jpg', 'Джедай Падаванов', msg, '10:12')
-		li: +asideLink('#test', './images/avatar_3.jpg', 'Алексей Примадонин', 'Тесты упали >_<', '08:53')
+		li(class='Mb(1rem)'): +asideLink('#test', './images/avatar_3.jpg', 'Алексей Примадонин', 'Тесты упали >_<', '08:53')

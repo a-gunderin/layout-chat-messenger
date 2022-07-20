@@ -188,9 +188,6 @@
 .Mb\(1\.5rem\) {
   margin-bottom: 1.5rem;
 }
-.Mb\(14px\) {
-  margin-bottom: 14px;
-}
 .Mb\(18px\) {
   margin-bottom: 18px;
 }
@@ -419,9 +416,9 @@
   .H\(a\)--lg {
     height: auto;
   }
-  .Mx\(1\.5rem\)--lg {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+  .Mx\(\.5rem\)--lg {
+    margin-left: .5rem;
+    margin-right: .5rem;
   }
   .Mend\(11px\)--lg {
     margin-right: 11px;
