@@ -8,12 +8,12 @@
 	},
 	"main": "",
 	"scripts": {
-		"slint": "npx stylelint ./app/scss/*.scss",
-		"slint:fix": "npx stylelint ./app/scss/*.scss --fix",
-		"hlint": "npx htmlhint ./build/*.html",
+		"slint": "npx stylelint ./src/scss/*.scss",
+		"slint:fix": "npx stylelint ./src/scss/*.scss --fix",
+		"hlint": "npx htmlhint ./dist/*.html",
 		"dev": "npx gulp dev",
 		"build": "npx gulp build",
-		"deploy": "npx surge ./build/ wasteful-pen.surge.sh"
+		"deploy": "npx surge ./dist/ wasteful-pen.surge.sh"
 	},
 	"bugs": {
 		"url": "https://github.com/a-gunderin/layout-designer-project-lvl3/issues"
