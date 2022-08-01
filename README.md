@@ -1,7 +1,7 @@
 # Layout designer project: Chat messenger
 
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/a-gunderin/layout-designer-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/a-gunderin/layout-designer-project-lvl3/actions)
+[![Actions Status](https://github.com/a-gunderin/layout-chat-messenger/workflows/linters-check/badge.svg)](https://github.com/a-gunderin/layout-chat-messenger/actions)
 
 Live: [Home page](http://wasteful-pen.surge.sh)
 
