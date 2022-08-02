@@ -3,7 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const pug = require('gulp-pug');
 const browserSync = require('browser-sync').create();
 const atomizer = require('gulp-atomizer');
-const atomizerConfig = require('./atomizer-config.js');
+const atomizerConfig = require('./atomizer.js');
 
 const buildSass = () => src('src/scss/*.scss')
 	.pipe(sass({
