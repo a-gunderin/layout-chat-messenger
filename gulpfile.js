@@ -8,7 +8,7 @@ const browserSyncJob = () => {
 	browserSync.init({ server: 'dist/' });
 	watch('src/**/*.pug', series(buildHtml, buildCss));
 	watch('src/scss/**/*.scss', buildCss);
-	watch(['src/js/**/*.js', '!src/js/_min/**/*.js'], uglifyJs);
+	watch(['src/js/**/*.js', '!src/js/_min/**/*.js'], series(uglifyJs, buildHtml));
 };
 
 const development = () => {
