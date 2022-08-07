@@ -4,20 +4,26 @@
 
 nav(id='navigation' class=navClass)
 	a(href='#logo' class=linksClass + ' Mend(a)')
-		img(src='images/icons/logo.svg' alt='icon' width='15' height='25')
+		img(
+			class="Objf(cv)"
+			src='images/sprite.svg#logo'
+			alt='icon'
+			width='15'
+			height='25'
+		)
 
 	if currentChat
 		a(href='#current-chat' data-tab-link='current-chat' class=linksClass  + ' Mend(40px) D(n)--lg')
-			img(src='images/icons/chat-left-text.svg' alt='icon' width='25' height='24')
+			img(src='images/sprite.svg#chat-left-text' alt='icon' width='25' height='24' class="Objf(cv)")
 
 	a(href='#contacts' data-tab-link='contacts' class=linksClass + ' Mend(40px) Mend(32px)--lg')
-		img(src='images/icons/people.svg' alt='icon' width='25' height='19' class='Mend(8px)--lg')
+		img(src='images/sprite.svg#people' alt='icon' width='25' height='19' class='Mend(8px)--lg Objf(cv)')
 		span(class=sectionTitleClass) Контакты
 
 	a(href='#chats' data-tab-link='chats' class=linksClass + ' Mend(43px) Mend(30px)--lg')
-		img(src='images/icons/chat.svg' alt='icon' width='25' height='24' class='Mend(8px)--lg')
+		img(src='images/sprite.svg#chat' alt='icon' width='25' height='24' class='Mend(8px)--lg Objf(cv)')
 		span(class=sectionTitleClass) Сообщения
 
 	a(href='#profile' data-tab-link='profile' class=linksClass)
-		img(src='images/icons/person.svg' alt='icon' width='19' height='19' class='Mend(11px)--lg')
+		img(src='images/sprite.svg#person' alt='icon' width='19' height='19' class='Mend(11px)--lg Objf(cv)')
 		span(class=sectionTitleClass) Профиль

@@ -41,9 +41,10 @@ mixin profileItem(fieldKey, fieldValue, iconPath, iconW, iconH)
 			span(class='Fz(14px) Lh(21px) C(darkColor)') #{fieldValue}
 		img(
 			alt='icon'
-			src='images/icons/' + iconPath
+			src='images/sprite.svg#' + iconPath
 			width=iconW
 			height=iconH
+			class="Objf(cv)"
 		)
 
 mixin partnerMessage(avatarPath, personName, message, time)

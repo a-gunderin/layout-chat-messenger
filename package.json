@@ -13,7 +13,8 @@
 		"hlint": "npx htmlhint ./dist/*.html",
 		"dev": "npx gulp dev",
 		"build": "npx gulp build",
-		"deploy": "npx surge ./dist/ wasteful-pen.surge.sh"
+		"deploy": "npx surge ./dist/ wasteful-pen.surge.sh",
+		"svg-sprite": "npx gulp buildSvgSprite"
 	},
 	"bugs": {
 		"url": "https://github.com/a-gunderin/layout-designer-project-lvl3/issues"
@@ -31,6 +32,7 @@
 		"gulp-concat": "^2.6.1",
 		"gulp-pug": "^5.0.0",
 		"gulp-sass": "^5.1.0",
+		"gulp-svg-sprite": "^1.5.0",
 		"gulp-uglify-es": "^3.0.0",
 		"htmlhint": "^1.1.4",
 		"normalize.css": "^8.0.1",
