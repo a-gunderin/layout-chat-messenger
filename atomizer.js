@@ -1,14 +1,14 @@
 module.exports = {
-	'breakPoints': {
-		'xxs': '@media (max-width:413px)',
-		'xs': '@media (min-width:413px)',
-		'sm': '@media (min-width:576px)',
-		'md': '@media (min-width:768px)',
-		'lg': '@media (min-width:992px)',
-		'xl': '@media (min-width:1200px)',
-		'xxl': '@media (min-width:1600px)'
+	breakPoints: {
+		xxs: '@media (max-width:413px)',
+		xs: '@media (min-width:413px)',
+		sm: '@media (min-width:576px)',
+		md: '@media (min-width:768px)',
+		lg: '@media (min-width:992px)',
+		xl: '@media (min-width:1200px)',
+		xxl: '@media (min-width:1600px)',
 	},
-	'custom': {
+	custom: {
 		// FONTS
 		defaultFont: 'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
 

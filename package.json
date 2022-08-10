@@ -14,7 +14,9 @@
 		"dev": "npx gulp dev",
 		"build": "npx gulp build",
 		"deploy": "npx surge ./dist/ wasteful-pen.surge.sh",
-		"svg-sprite": "npx gulp buildSvgSprite"
+		"svg-sprite": "npx gulp buildSvgSprite",
+		"eslint": "npx eslint .",
+		"eslint:fix": "npx eslint --fix ."
 	},
 	"bugs": {
 		"url": "https://github.com/a-gunderin/layout-designer-project-lvl3/issues"
@@ -24,6 +26,9 @@
 	"license": "ISC",
 	"devDependencies": {
 		"browser-sync": "^2.27.10",
+		"eslint": "^8.21.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.25.2",
 		"gulp": "^4.0.2",
 		"gulp-atomizer": "^3.0.7",
 		"gulp-autoprefixer": "^8.0.0",
