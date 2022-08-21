@@ -3,11 +3,11 @@ include ../_mixins/_mixins
 div(
 	id='profile'
 	data-tab-block='profile'
-	class='D(f) Fld(c) H(100%) Pb(1rem) Ov(h) D(n)'
+	class='D(f) Fld(c) H(100%) Pb(1rem) Ov(a) D(n)'
 )
 	+asideHeader('Профиль', 'profile-form', 'profile-input', 'Поиск по сообщениям')
 
-	div(class='D(f) Fld(c) Ai(c) Mx(1.5rem) Mb(3rem) Px(1rem) Py(2rem) Py(2.5rem)--lg')
+	div(class='D(f) Fld(c) Ai(c) Mx(1.5rem) Mb(1.5rem) Px(1rem) Py(1.5rem)')
 		img(
 		alt='avatar'
 			src='images/avatar_1.jpg'
@@ -15,11 +15,11 @@ div(
 			height='90'
 			class='Bdrs(50%) Mb(8px)'
 		)
-		h3(class='Mt(0) Mb(1.5rem) Fz(14px) Fz(1rem)--lg Fw(700) Lh(1.5rem) Ta(c)') Кодовёнок Хекслетович
+		h3(class='Mt(0) Mb(1rem) Fz(14px) Fz(1rem)--lg Fw(700) Lh(1.5rem) Ta(c)') Кодовёнок Хекслетович
 		p(class='My(0) Lh(1.5rem) Ta(c) C(black50)')
 			|Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
 
-	ul(class='hide-scrollbar W(100%) Maw(384px) Mx(a) List(n) Pstart(0) My(0) Ov(a)')
+	ul(class='W(100%) Maw(384px) Mx(a) List(n) Pstart(0) My(0)')
 		+profileItem('Страна', 'Киев, Украина', 'globe', 16, 16)
 		+profileItem('Телефон', '+38 (096) 123-45-67', 'phone', 16, 16)
 		+profileItem('Email', 'ga@web-notes.info', 'mail', 16, 12)

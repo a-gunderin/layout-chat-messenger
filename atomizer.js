@@ -30,7 +30,7 @@ module.exports = {
 
 		// OTHER VALUES
 		bodyHeightXl: 'calc(100vh - 3rem)',
-		chatListMobileHeight: 'calc(100vh - 14rem)',
+		chatListMobileHeight: 'calc(100vh - 18rem)',
 		defBorder: '1px solid #efefef',
 		myMsgBorder: '1px solid rgba(239, 239, 239, 0.6)',
 		defOutline: '1px dashed #6c757d',
